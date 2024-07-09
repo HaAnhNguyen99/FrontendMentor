@@ -19,7 +19,12 @@
          }
          body {
             font-family: Outfit, sans serif;
+            min-height: 100vh;
             background-color: #d5e1ef;
+            display: flex;
+         }
+         main {
+            margin: auto;
          }
          .container {
             display: flex;
@@ -32,9 +37,6 @@
             background-color: #fff;
             padding: 16px;
             width: 320px;
-            margin: auto;
-            transform: translateY(25%);
-            box-sizing: border-box;
          }
 
          .qr-code {
@@ -90,21 +92,23 @@
       </style>
    </head>
    <body>
-      <div class="container">
-         <div class="qr-code">
-            <img src="./qr-code.svg" alt="" />
-            <div class="circle up"></div>
-            <div class="circle down"></div>
-         </div>
-         <div class="content">
-            <div class="title">
-               Improve your front-end skills by building projects
+      <main role="main">
+         <div class="container">
+            <div class="qr-code">
+               <img src="./qr-code.svg" alt="" />
+               <div class="circle up"></div>
+               <div class="circle down"></div>
             </div>
-            <div class="desc">
-               Scan the QR code to visit Frontend Mentor and take your coding
-               skills to the next level
+            <div class="content">
+               <h1 class="title">
+                  Improve your front-end skills by building projects
+               </h1>
+               <div class="desc">
+                  Scan the QR code to visit Frontend Mentor and take your coding
+                  skills to the next level
+               </div>
             </div>
          </div>
-      </div>
+      </main>
    </body>
 </html>
